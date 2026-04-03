@@ -10,3 +10,13 @@ Docling is an open-source document processing tool used to parse, convert, and s
 
 ### What is Docling CLI
 Docling CLI is the command-line tool used to run Docling functions such as document conversion, format selection, and pipeline testing directly from  terminal.
+
+## Objective
+The objective of this task is to explore the basic functionality of Docling as an open-source document processing tool;
+
+* Install Docling
+* Verify installation
+* Convert PDF documents
+* Test different output formats
+* Compare CLI options
+* Analyse results
