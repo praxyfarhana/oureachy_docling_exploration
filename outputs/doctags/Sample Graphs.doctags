@@ -1,0 +1,37 @@
+<doctag><picture><loc_22><loc_29><loc_478><loc_471></picture>
+<page_break>
+<section_header_level_1><loc_50><loc_56><loc_232><loc_87>Types of Graphs</section_header_level_1>
+<unordered_list><list_item><loc_50><loc_139><loc_130><loc_158> Pie Graph</list_item>
+<list_item><loc_68><loc_167><loc_240><loc_186> Displays parts to a whole</list_item>
+<list_item><loc_50><loc_196><loc_138><loc_214> Line Graph</list_item>
+<list_item><loc_68><loc_224><loc_230><loc_242> Shows trends over time</list_item>
+<list_item><loc_50><loc_252><loc_188><loc_271> Stacked Bar Graph</list_item>
+<list_item><loc_68><loc_280><loc_373><loc_299> Compares fractions of whole across categories</list_item>
+<list_item><loc_50><loc_309><loc_132><loc_327> Bar Graph</list_item>
+<list_item><loc_68><loc_337><loc_299><loc_355> Compares values across categories</list_item>
+<list_item><loc_50><loc_365><loc_134><loc_384> Histogram</list_item>
+<list_item><loc_68><loc_394><loc_275><loc_412> Compares rates along intervals</list_item>
+</unordered_list>
+<page_break>
+<section_header_level_1><loc_50><loc_56><loc_161><loc_87>Pie Graph</section_header_level_1>
+<section_header_level_1><loc_50><loc_130><loc_324><loc_158>Compares Parts to a Whole</section_header_level_1>
+<picture><loc_100><loc_190><loc_413><loc_338></picture>
+<page_break>
+<section_header_level_1><loc_50><loc_56><loc_173><loc_87>Line Graph</section_header_level_1>
+<section_header_level_1><loc_50><loc_130><loc_302><loc_158>Shows Trends Over Time</section_header_level_1>
+<picture><loc_87><loc_160><loc_413><loc_394></picture>
+<page_break>
+<section_header_level_1><loc_50><loc_56><loc_257><loc_87>Stacked Bar Graph</section_header_level_1>
+<section_header_level_1><loc_50><loc_130><loc_434><loc_158>Compares Fractions Across Categories</section_header_level_1>
+<picture><loc_86><loc_170><loc_301><loc_408></picture>
+<text><loc_315><loc_228><loc_412><loc_242>Below Standard</text>
+<text><loc_323><loc_262><loc_411><loc_275>I Meets Standard</text>
+<text><loc_314><loc_296><loc_373><loc_311>Exceeds</text>
+<text><loc_325><loc_311><loc_376><loc_326>Standard</text>
+<page_break>
+<section_header_level_1><loc_50><loc_56><loc_164><loc_87>Bar Graph</section_header_level_1>
+<section_header_level_1><loc_50><loc_130><loc_409><loc_158>Compares Values Across Categories</section_header_level_1>
+<picture><loc_95><loc_176><loc_414><loc_407></picture>
+<page_break>
+<picture><loc_23><loc_29><loc_478><loc_471></picture>
+</doctag>

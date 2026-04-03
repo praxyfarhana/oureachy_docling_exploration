@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>sample-tables</title>
+<meta name="generator" content="Docling HTML Serializer"/>
+<style>
+    html {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #333;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.3em;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 1em 0;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    figure {
+        margin: 1.5em 0;
+        text-align: center;
+    }
+    figcaption {
+        color: #666;
+        font-style: italic;
+        margin-top: 0.5em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    pre {
+        background-color: #f6f8fa;
+        border-radius: 3px;
+        padding: 1em;
+        overflow: auto;
+    }
+    code {
+        font-family: monospace;
+        background-color: #f6f8fa;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+    }
+    pre code {
+        background-color: transparent;
+        padding: 0;
+    }
+    .formula {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background-color: #f9f9f9;
+    }
+    .formula-not-decoded {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0,
+            #f0f0f0 10px,
+            #f9f9f9 10px,
+            #f9f9f9 20px
+        );
+    }
+    .page-break {
+        page-break-after: always;
+        border-top: 1px dashed #ccc;
+        margin: 2em 0;
+    }
+    .key-value-region {
+        background-color: #f9f9f9;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .key-value-region dt {
+        font-weight: bold;
+    }
+    .key-value-region dd {
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+    }
+    .form-container {
+        border: 1px solid #ddd;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .form-item {
+        margin-bottom: 0.5em;
+    }
+    .image-classification {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 0.5em;
+    }
+</style>
+</head>
+<body>
+<div class='page'>
+<h2>Design and build accessible PDF tables Sample tables</h2>
+<table><caption><div class="caption">Table 1</div></caption><tbody><tr><th>Column header (TH)</th><th>Column header (TH)</th><th>Column header (TH)</th></tr><tr><td>Data cell (TD)</td><td>Data cell (TD)</td><td>Row header (TH)</td></tr><tr><td>Data cell (TD)</td><td>Data cell (TD)</td><td>Row header(TH)</td></tr></tbody></table>
+<table><caption><div class="caption">Table 2: example of footnotes referenced from within a table</div></caption><tbody><tr><th colspan="2">Expenditure by function £ million</th><th>2009/10</th><th>2010/11 1</th></tr><tr><th rowspan="3">Policy functions</th><th>Financial</th><td>22.5</td><td>30.57</td></tr><tr><th>Information 2</th><td>10.2</td><td>14.8</td></tr><tr><th>Contingency</th><td>2.6</td><td>1.2</td></tr><tr><th rowspan="4">Remunerated functions</th><th>Agency services 3</th><td>44.7</td><td>35.91</td></tr><tr><th>Payments</th><td>22.41</td><td>19.88</td></tr><tr><th>Banking</th><td>22.90</td><td>44.23</td></tr><tr><th>Other</th><td>12.69</td><td>10.32</td></tr></tbody></table>
+<ol>
+<li style="list-style-type: '(1) ';">Provisional total as of publication date.</li>
+<li style="list-style-type: '(2) ';">Costs associated with on-going information programmes.</li>
+<li style="list-style-type: '(3) ';">From the management accounts, net of recoveries, including interest charges.</li>
+</ol>
+<table><caption><div class="caption">Table 3: &quot;film credits&quot; style layout</div></caption><tbody><tr><td>Daniel Radcliffe</td><td>Main character</td></tr><tr><td>Rupert Grint</td><td>Sidekick 1</td></tr><tr><td>Emma Watson</td><td>Sidekick 2</td></tr><tr><td>Robbie Coltrane</td><td>Lovable ogre</td></tr><tr><td>Maggie Smith</td><td>Professor</td></tr><tr><td>Richard Harris</td><td>Headmaster</td></tr></tbody></table>
+<h2>Table 4: table 3 with column headers added</h2>
+<table><tbody><tr><th>Role</th><th>Actor</th></tr><tr><td>Daniel Radcliffe</td><td>Main character</td></tr><tr><td>Rupert Grint</td><td>Sidekick 1</td></tr><tr><td>Emma Watson</td><td>Sidekick 2</td></tr><tr><td>Robbie Coltrane</td><td>Lovable ogre</td></tr><tr><td>Maggie Smith</td><td>Professor</td></tr><tr><td>Richard Harris</td><td>Headmaster</td></tr></tbody></table>
+<h2>Table 5: year-end financial statement (£, thousands)</h2>
+<table><tbody><tr><td></td><th>2010</th><th>2009</th><th>2008</th></tr><tr><th>Non-current assets</th><td></td><td></td><td></td></tr><tr><th>Property</th><td>345</td><td>445</td><td>222</td></tr><tr><th>Investment</th><td>567</td><td>654</td><td>423</td></tr><tr><th>Intangibles</th><td>423</td><td>123</td><td>453</td></tr><tr><th>Current assets</th><td></td><td></td><td></td></tr><tr><th>Trade and other receivables</th><td>435</td><td>634</td><td>231</td></tr><tr><th>Cash and cash equivalents</th><td>524</td><td>123</td><td>482</td></tr><tr><th>Other</th><td>223</td><td>211</td><td>254</td></tr></tbody></table>
+<h2>Table 6: a table with a more serious headings problem</h2>
+<table><tbody><tr><th>Rainfall (inches)</th><th>Americas</th><th>Asia</th><th>Europe</th><th>Africa</th></tr><tr><th colspan="5">2010</th></tr><tr><td>Average</td><td>104</td><td>201</td><td>193</td><td>144</td></tr><tr><td>24 hour high</td><td>15</td><td>26</td><td>27</td><td>18</td></tr><tr><td>12 hour high</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><th colspan="5">2009</th></tr><tr><td>Average</td><td>133</td><td>244</td><td>155</td><td>166</td></tr><tr><td>24 hour high</td><td>27</td><td>28</td><td>29</td><td>20</td></tr><tr><td>12 hour high</td><td>11</td><td>12</td><td>13</td><td>16</td></tr></tbody></table>
+<p>Table 7: year-end statement, non-current assets (£, thousands)</p>
+<table><tbody><tr><th>Non-current assets</th><th>2010</th><th>2009</th><th>2008</th></tr><tr><td>Property</td><td>345</td><td>445</td><td>222</td></tr><tr><td>Investment</td><td>567</td><td>654</td><td>423</td></tr><tr><td>Intangibles</td><td>423</td><td>123</td><td>453</td></tr></tbody></table>
+<p>Table 8: year-end statement, current assets (£, thousands)</p>
+<table><tbody><tr><th>Current assets</th><th>2010</th><th>2009</th><th>2008</th></tr><tr><th>Trade and other receivables</th><td>435</td><td>634</td><td>231</td></tr><tr><th>Cash and cash equivalents</th><td>524</td><td>123</td><td>482</td></tr><tr><th>Other</th><td>223</td><td>211</td><td>254</td></tr></tbody></table>
+<p>Table 9: rainfall by continent, 2009</p>
+<table><tbody><tr><th>Rainfall (inches)</th><th>Americas</th><th>Asia</th><th>Europe</th><th>Africa</th></tr><tr><td>Average</td><td>133</td><td>244</td><td>155</td><td>166</td></tr><tr><td>24 hour high</td><td>27</td><td>28</td><td>29</td><td>20</td></tr><tr><td>12 hour high</td><td>11</td><td>12</td><td>13</td><td>16</td></tr></tbody></table>
+<table><caption><div class="caption">Table 10: self-contained year-end statement (£, thousands) (multiple layout problems)</div></caption><tbody><tr><td></td><th colspan="2">2011</th><th colspan="2">2010 restated</th></tr><tr><th>General income</th><td></td><td>250,000</td><td></td><td>200,000</td></tr><tr><th>Increase in value, WIP</th><td></td><td>15,000</td><td></td><td>30,000</td></tr><tr><td></td><td></td><td>265,000</td><td></td><td>230,000</td></tr><tr><th>Administrative costs</th><td></td><td></td><td></td><td></td></tr><tr><th>Staff costs</th><td>(200,000)</td><td></td><td>(150,000)</td><td></td></tr><tr><th>Early departures</th><td>(10,000)</td><td></td><td>(20,000)</td><td></td></tr><tr><th>Other</th><td>(25,000)</td><td></td><td>(10,000)</td><td></td></tr><tr><th>Depreciation</th><td>(10,000)</td><td></td><td>(10,000)</td><td></td></tr><tr><th>Programme costs</th><td></td><td></td><td></td><td></td></tr><tr><th>Impairment loss</th><td>(10,000)</td><td></td><td>(5,000)</td><td></td></tr><tr><th>Other</th><td>(5,000)</td><td></td><td>(5,000)</td><td></td></tr><tr><td></td><td>(260,000)</td><td></td><td>(200,000)</td><td></td></tr><tr><th>Surplus</th><td></td><td>5,000</td><td></td><td>30,000</td></tr></tbody></table>
+<table><caption><div class="caption">Table 11: self-contained year-end statement (£, thousands) (multiple problems resolved)</div></caption><tbody><tr><td></td><td></td><th>2011</th><th>2010 restated</th></tr><tr><th>Income</th><th>General income</th><td>250,000</td><td>200,000</td></tr><tr><td></td><th>Increase in value</th><td>15,000</td><td>30,000</td></tr><tr><td></td><th>Total income</th><td>265,000</td><td>230,000</td></tr><tr><th>Administrative costs</th><th>Staff costs</th><td>(200,000)</td><td>(150,000)</td></tr><tr><td></td><th>Early departures</th><td>(10,000)</td><td>(20,000)</td></tr><tr><td></td><th>Other operating costs</th><td>(25,000)</td><td>(10,000)</td></tr><tr><td></td><th>Depreciation</th><td>(10,000)</td><td>(10,000)</td></tr><tr><th>Programme costs</th><th>Impairment loss</th><td>(10,000)</td><td>(5,000)</td></tr><tr><td></td><th>Other</th><td>(5,000)</td><td>(5,000)</td></tr><tr><td></td><th>Total costs</th><td>(260,000)</td><td>(200,000)</td></tr><tr><th colspan="2">Surplus</th><td>5,000</td><td>30,000</td></tr></tbody></table>
+<table><caption><div class="caption">Table 12: merged data cells are not recommended</div></caption><tbody><tr><td></td><th colspan="2">2008</th><th colspan="2">2009</th></tr><tr><th>Name</th><th>Yes</th><th>No</th><th>Yes</th><th>No</th></tr><tr><td>Bob</td><td>2</td><td>5</td><td>6</td><td>7</td></tr><tr><td>Sue</td><td>3</td><td>8</td><td>4</td><td>7</td></tr><tr><td>Sam</td><td colspan="2">[data relating to both columns in a single cell spanning both]</td><td colspan="2">[data relating to both columns a single cell spanning both]</td></tr></tbody></table>
+<table><caption><div class="caption">Table 13: use of graphic symbols</div></caption><tbody><tr><th>Question</th><th>Respondent A</th><th>Respondent B</th><th>Respondent C</th></tr><tr><td>Are you a UK citizen? </td><td></td><td></td><td></td></tr><tr><td>Are you currently</td><td></td><td></td><td>employed? </td></tr><tr><td>Do you have a driving licence?</td><td></td><td></td><td></td></tr></tbody></table>
+<p>Table 14: symbols replaced by real text</p>
+<table><tbody><tr><th>Question</th><th>Respondent A</th><th>Respondent B</th><th>Respondent C</th></tr><tr><th>Are you a UK citizen?</th><td>No</td><td>Yes</td><td>No</td></tr><tr><th>Are you currently employed?</th><td>Yes</td><td>No</td><td>Yes</td></tr><tr><th>Do you have a driving licence?</th><td>No</td><td>No</td><td>Yes</td></tr></tbody></table>
+<p>Table 15: courses offered by Institution X. A = Bachelor of Science, B = Bachelor of Arts, C = Masters, D = Doctorate, E = Diploma</p>
+<table><tbody><tr><td></td><th>2006</th><th>2007</th><th>2008</th><th>2009</th></tr><tr><th>Economics</th><td>A, B</td><td>A, C</td><td>A, B</td><td>A, C</td></tr><tr><th>International relations</th><td>A, E</td><td>A, E</td><td>A, B</td><td>A, E</td></tr><tr><th>Philosophy</th><td>A</td><td>A</td><td>A</td><td>A, D</td></tr><tr><th>Politics</th><td>A, D</td><td>A, D</td><td>A, D</td><td>A</td></tr><tr><th>Mathematics</th><td>B, C</td><td>B</td><td>A, E</td><td>A, B</td></tr><tr><th>English</th><td>A, C</td><td>A, B</td><td>A,B</td><td>C</td></tr></tbody></table>
+<table><caption><div class="caption">Table 16:  Masters courses offered by Institution X</div></caption><tbody><tr><td></td><th>2006</th><th>2007</th><th>2008</th><th>2009</th></tr><tr><th>Economics</th><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><th>International relations</th><td>No</td><td>No</td><td>No</td><td>No</td></tr><tr><th>Philosophy</th><td>No</td><td>No</td><td>No</td><td>No</td></tr><tr><th>Politics</th><td>No</td><td>No</td><td>No</td><td>No</td></tr><tr><th>Mathematics</th><td>Yes</td><td>No</td><td>No</td><td>No</td></tr><tr><th>English</th><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr></tbody></table>
+<table><caption><div class="caption">Table 17: accounts, 2011 (£, thousands)</div></caption><tbody><tr><th colspan="2">Accounting item</th><th>2011</th></tr><tr><th>Income</th><th>General income</th><td>200,000</td></tr><tr><td></td><th>Increase in value, WIP</th><td>30,000</td></tr><tr><td></td><th>Income subtotal</th><td>230,000</td></tr><tr><th>Administrative costs</th><th>Staff</th><td>150,000</td></tr><tr><td></td><th>Early departures</th><td>20,000</td></tr><tr><td></td><th>Other operating costs</th><td>10,000</td></tr><tr><td></td><th>Depreciation</th><td>10,000</td></tr><tr><th>Programme costs</th><th>Impairment loss</th><td>10,000</td></tr><tr><td></td><th>Costs subtotal</th><td>200,000</td></tr><tr><th colspan="2">Balance</th><td>30,000</td></tr></tbody></table>
+<p>Table 18: accounts, 2011 (£, thousands)</p>
+<table><tbody><tr><th colspan="2">Accounting item</th><th>2011</th></tr><tr><th>Income</th><th>General income</th><td>200,000</td></tr><tr><td></td><th>Increase in value, WIP</th><td>30,000</td></tr><tr><td></td><th>Income subtotal</th><td>230,000</td></tr><tr><th rowspan="4">Administrative costs</th><th>Staff</th><td>(150,000)</td></tr><tr><th>Early departures</th><td>(20,000)</td></tr><tr><th>Other operating costs</th><td>(10,000)</td></tr><tr><th>Depreciation</th><td>(10,000)</td></tr><tr><th>Programme costs</th><th>Impairment loss</th><td>(10,000)</td></tr><tr><td></td><th>Costs subtotal</th><td>(200,000)</td></tr><tr><th colspan="2">Balance</th><td>30,000</td></tr></tbody></table>
+<p>Table 19: Human Development Index (HDI)</p>
+<h2>trends, 1980 to 2010. Source: Barro-Lee March, 2010</h2>
+<table><tbody><tr><th>Country</th><th>1980</th><th>1990</th><th>2000</th><th>2010</th></tr><tr><th>Afghanistan</th><td>0.78</td><td>1.48</td><td>2.16</td><td>3.33</td></tr><tr><th>Albania</th><td>8.89</td><td>9.67</td><td>9.89</td><td>10.38</td></tr><tr><th>Algeria</th><td>4.74</td><td>3.33</td><td>5.50</td><td>7.24</td></tr><tr><th>Andorra</th><td>4.98</td><td>5.63</td><td>9.09</td><td>10.35</td></tr><tr><th>Angola</th><td>-</td><td>-</td><td>4.42</td><td>4.42</td></tr></tbody></table>
+<p>Table 20: footnotes referenced from within a table</p>
+<table><tbody><tr><th colspan="2">Expenditure by function £million</th><th>2009/10</th><th>2010/11 1</th></tr><tr><th rowspan="3">Policy functions</th><th>Financial</th><td>22.5</td><td>30.57</td></tr><tr><th>Information 2</th><td>10.2</td><td>14.8</td></tr><tr><th>Contingency</th><td>2.6</td><td>1.2</td></tr><tr><th rowspan="4">Remunerated functions</th><th>Agency services 3</th><td>44.7</td><td>35.91</td></tr><tr><th>Payments</th><td>22.41</td><td>19.88</td></tr><tr><th>Banking</th><td>22.90</td><td>44.23</td></tr><tr><th>Other</th><td>12.69</td><td>10.32</td></tr></tbody></table>
+<ol>
+<li style="list-style-type: '(1) ';">Provisional total as of publication date.</li>
+<li style="list-style-type: '(2) ';">Costs associated with on-going information programmes.</li>
+<li style="list-style-type: '(3) ';">From the management accounts, net of recoveries and including interest charges</li>
+</ol>
+<table><caption><div class="caption">Table 21: footnotes replaced by additional table summary text</div></caption><tbody><tr><th colspan="2">Expenditure by function £million</th><th>2009/10</th><th>2010/11</th></tr><tr><th rowspan="3">Policy functions</th><th>Financial</th><td>22.5</td><td>30.57</td></tr><tr><th>Information</th><td>10.2</td><td>14.8</td></tr><tr><th>Contingency</th><td>2.6</td><td>1.2</td></tr><tr><th rowspan="4">Remunerated functions</th><th>Agency services</th><td>44.7</td><td>35.91</td></tr><tr><th>Payments</th><td>22.41</td><td>19.88</td></tr><tr><th>Banking</th><td>22.90</td><td>44.23</td></tr><tr><th>Other</th><td>12.69</td><td>10.32</td></tr></tbody></table>
+<table><caption><div class="caption">Table 22: referencing multiple endnotes from within a table</div></caption><tbody><tr><th>Expenditure £m</th><th>Notes</th><th>2010</th><th>2011</th></tr><tr><td></td><th>(Notes located on page [n])</th><td></td><td></td></tr><tr><th>Information</th><td>1</td><td>10.2</td><td>14.8</td></tr><tr><th>Contingency</th><td></td><td>2.6</td><td>1.2</td></tr><tr><th>Payments</th><td>3</td><td>22.41</td><td>19.88</td></tr><tr><th>Banking services</th><td>4</td><td>22.90</td><td>44.23</td></tr><tr><th>Interest</th><td></td><td>0.23</td><td>0.10</td></tr><tr><th>Dividends</th><td>23</td><td>2.5</td><td>3.68</td></tr><tr><th>Other</th><td>9</td><td>12.69</td><td>10.32</td></tr></tbody></table>
+<p>Table 23: simulated table created using tabs and containing no structure</p>
+<table><tbody><tr><td></td><th colspan="2">2008</th><th colspan="2">2009</th></tr><tr><th>Name</th><th>Entered</th><th>Completed</th><th>Entered</th><th>Completed</th></tr><tr><td>Bob</td><td>22</td><td>21</td><td>20</td><td>19</td></tr><tr><td>Sue</td><td>44</td><td>12</td><td>12</td><td>10</td></tr></tbody></table>
+<h2>Table 24: year-end financial statement (£, thousands)</h2>
+<table><tbody><tr><td></td><th>2010</th><th>2009</th><th>2008</th></tr><tr><th>Non-current assets</th><td></td><td></td><td></td></tr><tr><th>Buildings</th><td>345</td><td>445</td><td>222</td></tr><tr><th>Investment</th><td>567</td><td>654</td><td>423</td></tr><tr><th>Intangibles</th><td>423</td><td>123</td><td>453</td></tr><tr><th>Current assets</th><td></td><td></td><td></td></tr><tr><th>Trade</th><td>435</td><td>634</td><td>231</td></tr><tr><th>Cash</th><td>524</td><td>123</td><td>482</td></tr><tr><th>Other</th><td>223</td><td>211</td><td>254</td></tr><tr><th>Current liabilities</th><td></td><td></td><td></td></tr><tr><th>Trade liabilities</th><td>154</td><td>125</td><td>421</td></tr><tr><th>Financial debt</th><td>231</td><td>474</td><td>572</td></tr><tr><th>Provisions</th><td>111</td><td>312</td><td>347</td></tr></tbody></table>
+<h2>Table 25: setting column and row scope via the tags panel</h2>
+<table><tbody><tr><td></td><th colspan="2">2008</th><th colspan="2">2009</th></tr><tr><td>Name</td><th>Entered</th><th>Won</th><th>Entered</th><th>Won</th></tr><tr><td>Bob</td><td>22</td><td>21</td><td>20</td><td>19</td></tr><tr><td>Sue</td><td>44</td><td>12</td><td>12</td><td>10</td></tr><tr><td>Sam</td><td>16</td><td>4</td><td>45</td><td>30</td></tr></tbody></table>
+<h2>Table 26: courses offered by Institution X. A = Bachelor of Science, B = Bachelor of Arts, C = Masters, D = Doctorate, E = Diploma</h2>
+<table><tbody><tr><td></td><th>2006</th><th>2007</th><th>2008</th><th>2009</th></tr><tr><th>Economics</th><td>A, B</td><td>A, C</td><td>A, C</td><td>A, C</td></tr><tr><th>International relations</th><td>A, E</td><td>A, E</td><td>A, B</td><td>A, B</td></tr><tr><th>Philosophy</th><td>A</td><td>A</td><td>A</td><td>A</td></tr><tr><th>Politics</th><td>A, D</td><td>A, D</td><td>A, B</td><td>A</td></tr><tr><th>Mathematics</th><td>B, C</td><td>B</td><td>A, B</td><td>A, B</td></tr><tr><th>English</th><td>A, C</td><td>A, B</td><td>A,B</td><td>A, C</td></tr></tbody></table>
+<table><caption><div class="caption">Table 27: &#x27;table&#x27; with columns simulated by using tab stops</div></caption><tbody><tr><th>Name</th><th>Apples</th><th>Pears</th></tr><tr><td>20</td><td>25</td><td>Bob Scott</td></tr><tr><td>24</td><td>15</td><td>Susan. P. Arnold-Jones, BA, FRSA, MD</td></tr><tr><td>14</td><td>10</td><td>Sam Holder-Dickinson</td></tr></tbody></table>
+<table><caption><div class="caption">Table 28: year-end financial table (£, thousands) - headings problem revisited</div></caption><tbody><tr><td></td><th>2010</th><th>2009</th><th>2008</th></tr><tr><th>Non-current assets</th><td></td><td></td><td></td></tr><tr><th>Buildings</th><td>345</td><td>445</td><td>222</td></tr><tr><th>Investment</th><td>567</td><td>654</td><td>423</td></tr><tr><th>Intangibles</th><td>423</td><td>123</td><td>453</td></tr><tr><th>Current assets</th><td></td><td></td><td></td></tr><tr><th>Trade</th><td>435</td><td>634</td><td>231</td></tr><tr><th>Cash</th><td>524</td><td>123</td><td>482</td></tr><tr><th>Other</th><td>223</td><td>211</td><td>254</td></tr><tr><th>Current liabilities</th><td></td><td></td><td></td></tr><tr><th>Trade liabilities</th><td>154</td><td>125</td><td>421</td></tr><tr><th>Financial debt</th><td>231</td><td>474</td><td>572</td></tr><tr><th>Provisions</th><td>111</td><td>312</td><td>347</td></tr></tbody></table>
+<p>Table 29: multiple headers attributes for each data cell</p>
+<table><tbody><tr><td></td><th>South America</th><th>Asia</th><th>Africa</th><th>Australia</th></tr><tr><th colspan="5">2010</th></tr><tr><th>Highest average</th><td>523.6</td><td>467.4</td><td>405.0</td><td>340.5</td></tr><tr><th>Highest in 24 hours</th><td>73.1</td><td>54.1</td><td>27.2</td><td>66.3</td></tr><tr><th>Highest in 12 hours</th><td>42.4</td><td>30.1</td><td>15.9</td><td>40.3</td></tr><tr><th colspan="5">2009</th></tr><tr><th>Highest average</th><td>487.7</td><td>453.6</td><td>398.7</td><td>356</td></tr><tr><th>Highest in 24 hours</th><td>67.2</td><td>53.2</td><td>44.3</td><td>53.8</td></tr><tr><th>Highest in 12 hours</th><td>34.7</td><td>34.1</td><td>29.8</td><td>31.0</td></tr><tr><th colspan="5">2008</th></tr><tr><th>Highest average</th><td>496.7</td><td>444.3</td><td>502.1</td><td>399.6</td></tr><tr><th>Highest in 24 hours</th><td>44.2</td><td>56.7</td><td>32.1</td><td>63.2</td></tr><tr><th>Highest in 12 hours</th><td>30.1</td><td>32.7</td><td>21.9</td><td>40.2</td></tr></tbody></table>
+</div>
+</body>
+</html>

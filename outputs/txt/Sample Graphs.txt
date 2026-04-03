@@ -1,0 +1,48 @@
+<!-- image -->
+
+## Types of Graphs
+
+-  Pie Graph
+-  Displays parts to a whole
+-  Line Graph
+-  Shows trends over time
+-  Stacked Bar Graph
+-  Compares fractions of whole across categories
+-  Bar Graph
+-  Compares values across categories
+-  Histogram
+-  Compares rates along intervals
+
+## Pie Graph
+
+## Compares Parts to a Whole
+
+<!-- image -->
+
+## Line Graph
+
+## Shows Trends Over Time
+
+<!-- image -->
+
+## Stacked Bar Graph
+
+## Compares Fractions Across Categories
+
+<!-- image -->
+
+Below Standard
+
+I Meets Standard
+
+Exceeds
+
+Standard
+
+## Bar Graph
+
+## Compares Values Across Categories
+
+<!-- image -->
+
+<!-- image -->
