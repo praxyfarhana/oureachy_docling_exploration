@@ -20,3 +20,13 @@ The objective of this task is to explore the basic functionality of Docling as a
 * Test different output formats
 * Compare CLI options
 * Analyse results
+
+  1. ## Install Docling
+
+
+
+  2. ## Verify installation
+  3. ## Convert PDF documents
+  4. ## Test different output formats
+  5. ## Compare CLI options
+  6. ## Analyse results
