@@ -88,6 +88,12 @@ After successfully seeting up the virtual environment and activated, the next st
 
 
   2. ## Verify installation
+  After installing Docling, I verified that the installation was successful by checking the installed version:
+
+     docling --version
+
+
+  
   3. ## Convert PDF documents
   4. ## Test different output formats
   5. ## Compare CLI options
