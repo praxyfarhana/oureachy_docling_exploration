@@ -65,7 +65,8 @@ Before installing Docling, I prepared a project workspace by navigating to the p
        Displayed the created project structure
                  ls
 
-      
+        ## Environment Set-up 
+        (screenshots/environment_setup.JPG)
 
   2. ## Verify installation
   3. ## Convert PDF documents
