@@ -118,16 +118,24 @@ After successfully seeting up the virtual environment and activated, the next st
                   docling --to html data/*.pdf --output outputs
 
        <p align="center">
-<img src="screenshots/pdf_html.JPG" width="700">
-</p>
+       <img src="screenshots/pdf_html.JPG" width="700">
+       </p>
 
     - Programmatic data processing with full metadata
    
                   docling --to json data/*.pdf --output outputs
 
+       <p align="center">
+       <img src="screenshots/pdf_json.JPG" width="700">
+       </p>
+
     - Extraction for simple keyword indexing
    
                   docling --to text data/*.pdf --output outputs
+
+      <p align="center">
+       <img src="screenshots/pdf_text.JPG" width="700">
+       </p>
 
     - Structural analysis of document elements
    
