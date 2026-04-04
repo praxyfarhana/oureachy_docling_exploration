@@ -26,10 +26,43 @@ Before installing Docling, I prepared a project workspace by navigating to the p
 
       * Move to Desktop
      Move to where the project folder is located
-           cd Desktop/
+                cd Desktop/
 
-      
+      * Navigate to outreachy folder
+      Navigate to main project directory created for Outreachy tasks.
+                cd outreachy/
 
+      * Navigate to docling project folder
+      Move into the specific project directory where Docling exploration work is done.
+                 cd docling
+
+      * Check Python version
+      Confirmed Python is installed and checked compatibility (Docling requires Python 3.9+ typically)
+                 python --version
+
+      * Create virtual environment
+      Created an isolated Python environment named my_doc to avoid dependency conflicts.
+                 python -m venv my_doc
+
+      * Activate virtual environment
+      Activates the virtual environment so packages install locally instead of globally.
+      Everytime you want to use docling you must activate virtual environment to find docling
+                 source my_doc/Scripts/activate
+
+       * Created folders
+       Created a directory to store terminal and output screenshots for documentation
+                 mkdir screenshots
+
+       Created folder to store input files/PDFs
+                 mkdir data
+
+       Created folder to store converted files Markdown, HTML, JSON, YAML, outputs.
+                 mkdir outputs
+
+       Displayed the created project structure
+                 ls
+
+       ![Environment Setup](screenshots/environment_setup.JPG)
 
   2. ## Verify installation
   3. ## Convert PDF documents
