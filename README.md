@@ -97,7 +97,7 @@ After successfully seeting up the virtual environment and activated, the next st
   3. ## Convert PDF documents
 
   ## Default PDF conversion
-  Docling exports to Markdown (.md) by default, which is ideal for RAG (Retrieval-Augmented Generation) workflows
+  The first test involved converting a standard PDF (linux.pdf) using the tool's most streamlined approach. Docling CLI default conversion does not require the user to specify a format in the command. When no flags are provided, Docling automatically defaults to Markdown (.md), which is optimized for structured data extraction
   <p align="center">
  <img src="screenshots/linux_defaulf_options.JPG" width="700">
  </p>
