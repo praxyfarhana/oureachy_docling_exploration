@@ -174,4 +174,74 @@ After successfully seeting up the virtual environment and activated, the next st
 
   
   5. ## Compare CLI options
+ 
+     1. Processing Time
+
+   * The Shortest Processing Time: pdf_md.JPG
+      Total Time: 1 minute 50 seconds
+
+      Start Time: 14:25:36
+
+      End Time: 14:27:26
+
+   This command processed data/ folder (3 files) to Markdown. 
+
+  * The Longest Processing Time: pdf_text.JPG
+      Total Time: ~9 minutes 04 seconds
+
+       Start Time: 15:23:43
+                 
+       End Time: 15:32:47
+    
+      2.              
+ 
+
+
   6. ## Analyse results
+
+     * ## 1. Hardware Resources
+Based on the logs on most of my files, my system is relying on local compute power:
+
+Compute Device: The logs explicitly state Using CPU device. My Intel or AMD processor is doing the heavy lifting of "looking" at the PDFs and rebuilding the layout.
+
+AI Models: The model used Torch (PyTorch) as the backend engine. Even though it's on a CPU, it’s loading complex "weights" (770/770 weight files) to ensure high-quality extraction of tables and graphs.
+
+Engine: RapidOCR is being used for text detection. The logs show it's pulling specific models like ch_PP-OCRv4_det_infer.p
+     
+   * ## Processing Time Analysis
+
+           pdf_md.JPG
+       
+Markdown is a "low-complexity" format. The tool only needs to identify structure (headers, lists, tables) and write them as plain text. Since Markdown doesn't require heavy metadata wrapping or complex nesting like JSON or HTML, the CPU finishes the "write" phase almost instantly after the OCR is done.
+
+            pdf_text.JPG  sample-tables.pdf
+ 
+
+ While I expected "text" to be the fastest, the logs reveal a critical bottleneck. 
+ 
+     At 15:28:32, the system hit a   Major Error: std::bad_alloc.
+                 
+ This is a "Memory Allocation" error. It means the sample-tables.pdf file was likely too complex for your CPU/RAM to handle in this format.
+                 
+  The system "hung" for several minutes trying to allocate memory before finally failing. The extra 7 minutes in this log weren't spent "converting"—they were spent in a system struggle.
+
+   * ## Storage Space
+
+1. The Storage Hierarchy from Smallest to Largest
+Based on the files generated in my outputs/ folder, here is the rank of storage efficiency:
+
+Rank 1: Plain Text (.txt) — Most Efficient
+
+Reasoning: . txt only stores the characters. It strips away all bolding, headers, and table structures. 
+
+Rank 2: Markdown (.md)
+
+Reasoning: .md is similar to text but adds a few extra bytes for symbols like # or | to represent headers and tables. This is usually essential for AI training.
+
+Rank 3: HTML (.html)
+
+Reasoning: .html is significantly heavier than Markdown. For every word, there might be a <div>, <span>, or <p> <img> tag surrounding it.
+
+Rank 4: JSON / YAML — Heaviest Text Format
+
+Reasoning: These are "data-rich." As seen in my output files such aspdf_json.JPG, Docling likely includes the coordinates where on the page the text was and metadata. This can sometimes make a JSON file nearly as large as the original PDF text-stream.
