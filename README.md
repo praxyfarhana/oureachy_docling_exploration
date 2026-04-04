@@ -111,6 +111,10 @@ After successfully seeting up the virtual environment and activated, the next st
     
                   docling --to html data/sample-tables.pdf --output outputs
 
+       <p align="center">
+       <img src="screenshots/single_file_conversion.JPG" width="700">
+       </p>
+
   * For multiple files conversion I used the command below:
   
     - Standard web-based rendering and styling
@@ -141,17 +145,32 @@ After successfully seeting up the virtual environment and activated, the next st
    
                   docling --to doctags data/*.pdf --output outputs
 
+       <p align="center">
+       <img src="screenshots/pdf_doctags.JPG" width="700">
+       </p>
+
     - Highly readable structured data that is ideal for config-driven pipelines
    
                   docling --to yaml data/*.pdf --output outputs
 
+       <p align="center">
+       <img src="screenshots/pdf_yaml.JPG" width="700">
+       </p>
+
     - Web Video Text Tracks; useful for time-aligned or indexed text segments
 
                   docling --to vtt data/*.pdf --output outputs
+        <p align="center">
+        <img src="screenshots/pdf_vtt.JPG" width="700">
+        </p>
 
     - Generates separate HTML files for each page, which is critical for memory management in large documents
    
                   docling --to html_split_page data/*.pdf --output outputs
+
+        <p align="center">
+        <img src="screenshots/pdf_html_split.JPG" width="700">
+        </p>
 
   
   5. ## Compare CLI options
