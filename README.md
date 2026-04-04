@@ -97,11 +97,50 @@ After successfully seeting up the virtual environment and activated, the next st
   3. ## Convert PDF documents
 
   ## Default PDF conversion
-  The first test involved converting a standard PDF (linux.pdf) using the tool's most streamlined approach. Docling CLI default conversion does not require the user to specify a format in the command. When no flags are provided, Docling automatically defaults to Markdown (.md), which is optimized for structured data extraction
+  The first test involved converting a standard PDF (linux.pdf) using the tool's most streamlined approach. Docling CLI default  conversion does not require the user to specify a format in the command. When no flags are provided, Docling automatically defaults to Markdown (.md), which is optimized for structured data extraction
   <p align="center">
  <img src="screenshots/linux_defaulf_options.JPG" width="700">
  </p>
+
+       docling data/linux.pdf
   
   4. ## Test different output formats
+  In addition to default conversion(.md format), I used the following commands to convert files and export the source files in the data/ directory to a dedicated outputs/ folder.
+
+  * For a single file conversion I used the command below:
+    
+                  docling --to html data/sample-tables.pdf --output outputs
+
+  * For multiple files conversion I used the command below:
+  
+    - Standard web-based rendering and styling
+
+                  docling --to html data/*.pdf --output outputs
+
+    - Programmatic data processing with full metadata
+   
+                  docling --to json data/*.pdf --output outputs
+
+    - Extraction for simple keyword indexing
+   
+                  docling --to text data/*.pdf --output outputs
+
+    - Structural analysis of document elements
+   
+                  docling --to doctags data/*.pdf --output outputs
+
+    - Highly readable structured data that is ideal for config-driven pipelines
+   
+                  docling --to yaml data/*.pdf --output outputs
+
+    - Web Video Text Tracks; useful for time-aligned or indexed text segments
+
+                  docling --to vtt data/*.pdf --output outputs
+
+    - Generates separate HTML files for each page, which is critical for memory management in large documents
+   
+                  docling --to html_split_page data/*.pdf --output outputs
+
+  
   5. ## Compare CLI options
   6. ## Analyse results
