@@ -22,7 +22,13 @@ The objective of this task is to explore the basic functionality of Docling as a
 * Analyse results
 
   1. ## Install Docling
+Before installing Docling, I prepared a project workspace by navigating to the project directory, verifying the Python version, creating and activating a virtual environment, and organizing folders which are; data, outputs, and screenshots. This setup ensured a clean development environment and proper project structure:
 
+      * Move to Desktop
+     Move to where the project folder is located
+           cd Desktop/
+
+      
 
 
   2. ## Verify installation
