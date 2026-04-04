@@ -32,14 +32,17 @@ Before installing Docling, I prepared a project workspace by navigating to the p
 
   * Move to Desktop
      Move to where the project folder is located
+    
                 cd Desktop/
 
  * Navigate to outreachy folder
       Navigate to main project directory created for Outreachy tasks.
+   
                 cd outreachy/
 
 * Navigate to docling project folder
       Move into the specific project directory where Docling exploration work is done.
+  
                  cd docling
 
 * Check Python version
@@ -60,15 +63,19 @@ Before installing Docling, I prepared a project workspace by navigating to the p
 
 * Created folders
        Created a directory to store terminal and output screenshots for documentation
+  
                  mkdir screenshots
 
        Created folder to store input files/PDFs
+  
                  mkdir data
 
        Created folder to store converted files Markdown, HTML, JSON, YAML, outputs.
+  
                  mkdir outputs
 
        Displayed the created project structure
+  
                  ls
 
 ## Docling Installation
