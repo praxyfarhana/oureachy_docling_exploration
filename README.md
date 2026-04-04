@@ -89,12 +89,19 @@ After successfully seeting up the virtual environment and activated, the next st
 
   2. ## Verify installation
   After installing Docling, I verified that the installation was successful by checking the installed version:
+  Shown in the image above
 
      docling --version
 
 
-  
   3. ## Convert PDF documents
+
+  ## Default PDF conversion
+  Docling exports to Markdown (.md) by default, which is ideal for RAG (Retrieval-Augmented Generation) workflows
+  <p align="center">
+ <img src="screenshots/linux_defaulf_options.JPG" width="700">
+ </p>
+  
   4. ## Test different output formats
   5. ## Compare CLI options
   6. ## Analyse results
