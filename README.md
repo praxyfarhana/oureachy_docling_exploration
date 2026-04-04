@@ -79,6 +79,12 @@ Before installing Docling, I prepared a project workspace by navigating to the p
                  ls
 
 ## Docling Installation
+After successfully seeting up the virtual environment and activated, the next step was to install Docling using pip. This ensures that all required dependencies are installed within the isolated project environment for better reproducibility and dependency management.
+ <p align="center">
+<img src="screenshots/docling_install.JPG" width="700">
+</p>
+
+     pip install docling
 
 
   2. ## Verify installation
