@@ -109,7 +109,7 @@ After successfully seeting up the virtual environment and activated, the next st
 
   * For a single file conversion I used the command below:
     
-                  docling --to html data/sample-tables.pdf --output outputs
+                  docling --to html data/linux.pdf --output outputs
 
        <p align="center">
        <img src="screenshots/single_file_conversion.JPG" width="700">
