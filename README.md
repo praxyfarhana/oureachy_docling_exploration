@@ -21,10 +21,10 @@ The objective of this task is to explore the basic functionality of Docling as a
 * Compare CLI options
 * Analyse results
 
-  1. ## Install Docling
+## Getting Started
 Before installing Docling, I prepared a project workspace by navigating to the project directory, verifying the Python version, creating and activating a virtual environment, and organizing folders which are; data, outputs, and screenshots. This setup ensured a clean development environment and proper project structure:
 
- ## Environment Set-up 
+ ### Environment Set-up 
  The virtual environment was created and activated before installing Docling.
  <p align="center">
 <img src="screenshots/environment_setup.JPG" width="700">
@@ -62,50 +62,50 @@ Before installing Docling, I prepared a project workspace by navigating to the p
                  source my_doc/Scripts/activate
 
 * Created folders
-       Created a directory to store terminal and output screenshots for documentation
+  Created a directory to store terminal and output screenshots for documentation
   
                  mkdir screenshots
 
-       Created folder to store input files/PDFs
+  Created folder to store input files/PDFs
   
                  mkdir data
 
-       Created folder to store converted files Markdown, HTML, JSON, YAML, outputs.
+  Created folder to store converted files Markdown, HTML, JSON, YAML, outputs.
   
                  mkdir outputs
 
-       Displayed the created project structure
+  Displayed the created project structure
   
                  ls
 
-## Docling Installation
-After successfully seeting up the virtual environment and activated, the next step was to install Docling using pip. This ensures that all required dependencies are installed within the isolated project environment for better reproducibility and dependency management.
- <p align="center">
-<img src="screenshots/docling_install.JPG" width="700">
-</p>
+### Docling Installation
+After successfully setting up the virtual environment and activated, the next step was to install Docling using pip. This ensures that all required dependencies are installed within the isolated project environment for better reproducibility and dependency management.
+
 
      pip install docling
 
 
-  2. ## Verify installation
-  After installing Docling, I verified that the installation was successful by checking the installed version:
-  Shown in the image above
+### Verify installation
+After installing Docling, I verified that the installation was successful by checking the installed version:
+Shown in the image above
 
      docling --version
 
+  <p align="center">
+  <img src="screenshots/docling_install.JPG" width="700">
+  </p>
+ ## Convert PDF documents
 
-  3. ## Convert PDF documents
-
-  ## Default PDF conversion
-  The first test involved converting a standard PDF (linux.pdf) using the tool's most streamlined approach. Docling CLI default  conversion does not require the user to specify a format in the command. When no flags are provided, Docling automatically defaults to Markdown (.md), which is optimized for structured data extraction
+ ### Default PDF conversion
+The first test involved converting a standard PDF (linux.pdf) using the tool's most streamlined approach. Docling CLI default  conversion does not require the user to specify a format in the command. When no flags are provided, Docling automatically defaults to Markdown (.md), which is optimized for structured data extraction
   <p align="center">
  <img src="screenshots/linux_defaulf_options.JPG" width="700">
  </p>
 
        docling data/linux.pdf
   
-  4. ## Test different output formats
-  In addition to default conversion(.md format), I used the following commands to convert files and export the source files in the data/ directory to a dedicated outputs/ folder.
+ ## Test different output formats
+In addition to default conversion(.md format), I used the following commands to convert files and export the source files in the data/ directory to a dedicated outputs/ folder.
 
   * For a single file conversion I used the command below:
     
@@ -173,9 +173,9 @@ After successfully seeting up the virtual environment and activated, the next st
         </p>
 
   
-  5. ## Compare CLI options
+## Compare CLI options
  
-     1. Processing Time
+### Processing Time 
 
    * The Shortest Processing Time: pdf_md.JPG
       Total Time: 1 minute 50 seconds
@@ -191,15 +191,13 @@ After successfully seeting up the virtual environment and activated, the next st
 
        Start Time: 15:23:43
                  
-       End Time: 15:32:47
-    
-      2.              
+       End Time: 15:32:47            
  
 
 
-  6. ## Analyse results
+## Analyse results
 
-     * ## 1. Hardware Resources
+### Hardware Resources Analysis
 Based on the logs on most of my files, my system is relying on local compute power:
 
 Compute Device: The logs explicitly state Using CPU device. My Intel or AMD processor is doing the heavy lifting of "looking" at the PDFs and rebuilding the layout.
@@ -208,7 +206,7 @@ AI Models: The model used Torch (PyTorch) as the backend engine. Even though it'
 
 Engine: RapidOCR is being used for text detection. The logs show it's pulling specific models like ch_PP-OCRv4_det_infer.p
      
-   * ## Processing Time Analysis
+### Processing Time Analysis
 
            pdf_md.JPG
        
@@ -225,7 +223,7 @@ Markdown is a "low-complexity" format. The tool only needs to identify structure
                  
   The system "hung" for several minutes trying to allocate memory before finally failing. The extra 7 minutes in this log weren't spent "converting"—they were spent in a system struggle.
 
-   * ## Storage Space
+### Storage Space Analysis
 
 1. The Storage Hierarchy from Smallest to Largest
 Based on the files generated in my outputs/ folder, here is the rank of storage efficiency:
