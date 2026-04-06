@@ -228,18 +228,18 @@ Markdown is a "low-complexity" format. The tool only needs to identify structure
 1. The Storage Hierarchy from Smallest to Largest
 Based on the files generated in my outputs/ folder, here is the rank of storage efficiency:
 
-Rank 1: Plain Text (.txt) — Most Efficient
+       Rank 1: Plain Text (.txt) — Most Efficient
 
-Reasoning: . txt only stores the characters. It strips away all bolding, headers, and table structures. 
+The .txt only stores the characters. It strips away all bolding, headers, and table structures. 
 
-Rank 2: Markdown (.md)
+       Rank 2: Markdown (.md)
 
-Reasoning: .md is similar to text but adds a few extra bytes for symbols like # or | to represent headers and tables. This is usually essential for AI training.
+The .md is similar to text but adds a few extra bytes for symbols like # or | to represent headers and tables. This is usually essential for AI training.
 
-Rank 3: HTML (.html)
+       Rank 3: HTML (.html)
 
-Reasoning: .html is significantly heavier than Markdown. For every word, there might be a <div>, <span>, or <p> <img> tag surrounding it.
+The .html is significantly heavier than Markdown. For every word, there might be a <div>, <span>, or <p> <img> tag surrounding it.
 
-Rank 4: JSON / YAML — Heaviest Text Format
+       Rank 4: JSON / YAML — Heaviest Text Format
 
-Reasoning: These are "data-rich." As seen in my output files such aspdf_json.JPG, Docling likely includes the coordinates where on the page the text was and metadata. This can sometimes make a JSON file nearly as large as the original PDF text-stream.
+The .json are "data-rich." As seen in my output files such aspdf_json.JPG, Docling likely includes the coordinates where on the page the text was and metadata. This can sometimes make a JSON file nearly as large as the original PDF text-stream.
