@@ -1,4 +1,4 @@
-# Exploring Docling Open Source Basics
+# Exploring Docling Document Processing Basics Exploration
 
   * Tool name: Docling
   * Language used: Python
