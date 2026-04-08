@@ -1,4 +1,4 @@
-# Exploring Docling Document Processing Basics Exploration
+# Exploring Docling Document Processing Basics 
 
   * Tool name: Docling
   * Language used: Python
