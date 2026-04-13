@@ -234,7 +234,5 @@ Based on the files generated in the `outputs/` folder, the following table ranks
 | **3** | **HTML (.html)** | ⭐⭐ | Significant overhead due to tags (e.g., `<div>`, `<span>`). | Much heavier than Markdown due to web-rendering code. |
 | **4** | **JSON / YAML** | ⭐ | Data-rich "heavyweight" formats. | Includes metadata like page coordinates, making it nearly as large as the original PDF text-stream. |
 
-> **Note:** As seen in my `pdf_json.JPG` results, the JSON format provides the highest level of detail for programmatic pipelines but requires the most storage and memory.
-
 ## Conclusion & Recommendations
 Through this exploration, I find it evident that Docling offers a powerful, flexible solution for document parsing within RAG pipelines, though performance varies significantly by output format. For tasks requiring a balance of speed and structural integrity, Markdown is the clear winner as it avoids the memory overhead seen in more complex formats. However, for metadata-intensive workflows where spatial coordinates are necessary, JSON is recommended, provided the system has sufficient RAM to avoid the std::bad_alloc errors encountered during testing. For the Fedora Ramalama project, I recommend prioritizing Markdown for general ingestion to ensure high performance on local CPU-bound environments.
