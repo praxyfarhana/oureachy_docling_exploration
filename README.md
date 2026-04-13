@@ -243,3 +243,6 @@ The .html is significantly heavier than Markdown. For every word, there might be
        Rank 4: JSON / YAML — Heaviest Text Format
 
 The .json are "data-rich." As seen in my output files such aspdf_json.JPG, Docling likely includes the coordinates where on the page the text was and metadata. This can sometimes make a JSON file nearly as large as the original PDF text-stream.
+
+## Conclusion & Recommendations
+Through this exploration, I find it evident that Docling offers a powerful, flexible solution for document parsing within RAG pipelines, though performance varies significantly by output format. For tasks requiring a balance of speed and structural integrity, Markdown is the clear winner as it avoids the memory overhead seen in more complex formats. However, for metadata-intensive workflows where spatial coordinates are necessary, JSON is recommended, provided the system has sufficient RAM to avoid the std::bad_alloc errors encountered during testing. For the Fedora Ramalama project, I recommend prioritizing Markdown for general ingestion to ensure high performance on local CPU-bound environments.
